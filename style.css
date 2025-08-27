@@ -1,0 +1,95 @@
+.romantic {
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 1px;
+}
+.heart {
+  animation: heartBeat 1s infinite alternate;
+  filter: drop-shadow(0 3px 10px #f9a8d4aa);
+}
+@keyframes heartBeat {
+  0% { transform: scale(1);}
+  100% { transform: scale(1.13);}
+}
+.swal2-title.romantic {
+  font-family: 'Dancing Script', cursive !important;
+  font-size: 2.1rem !important;
+  color: #e11d48 !important;
+}
+.swal2-popup {
+  border-radius: 2.2rem !important;
+  box-shadow: 0 10px 40px #f9a8d4b7 !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+.swal2-confirm, .swal2-cancel, .swal2-deny {
+  border-radius: 9999px !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  background: linear-gradient(90deg, #fb7185, #f472b6) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 18px #fbcfe8c9 !important;
+}
+.swal2-cancel {
+  background: #f9a8d4 !important;
+  color: #fff !important;
+}
+.swal2-confirm:hover, .swal2-cancel:hover, .swal2-deny:hover {
+  filter: brightness(1.08) saturate(1.2) drop-shadow(0 2px 7px #fb718588);
+}
+.wa-btn-pop {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1.6rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.12rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  color: #fff;
+  border-radius: 9999px;
+  border: 2px solid #bbf7d0;
+  box-shadow: 0 3px 14px #22c55e22;
+  text-decoration: none;
+  transition: all 0.18s;
+}
+.wa-btn-pop:hover {
+  filter: brightness(1.08) drop-shadow(0 2px 8px #22c55ecc);
+  transform: scale(1.05);
+  color: #fff;
+  text-decoration: none;
+}
+#music-toggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 40;
+  padding: 0.85rem 1.2rem;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #fb7185, #f472b6);
+  color: #fff;
+  font-size: 1.5rem;
+  box-shadow: 0 6px 22px #fb718588;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  transition: all .19s cubic-bezier(.4,2,.6,1);
+  outline: none;
+  border: 2.5px solid #fbcfe8;
+  font-family: 'Poppins', sans-serif;
+}
+#music-toggle:hover {
+  filter: brightness(1.09) drop-shadow(0 3px 10px #fb7185aa);
+  transform: scale(1.08) rotate(-3deg);
+}
+#music-toggle .wave {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin-left: 2px;
+  vertical-align: middle;
+}

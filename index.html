@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permintaan Maaf Bucin Lucu</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- SweetAlert2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Google Fonts: Dancing Script & Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: url('bg.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body class="relative min-h-screen overflow-x-hidden">
+
+  <!-- Musik autoplay & loop -->
+  <audio id="bg-music" src="musik.mp3" loop preload="auto"></audio>
+
+  <div class="flex flex-col items-center justify-center min-h-screen relative z-10">
+    <div class="bg-white/80 p-8 rounded-[2.5rem] shadow-2xl max-w-md mx-auto text-center border-2 border-pink-200">
+      <div class="mb-3">
+        <svg class="mx-auto heart" width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="#fb7185" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+      </div>
+      <h1 class="text-4xl romantic font-bold text-pink-600 mb-2 animate-bounce drop-shadow">Maafin Aku, Sayang! ❤️</h1>
+      <p class="text-lg text-pink-700 font-semibold">Klik tombol di bawah buat baca permintaan maaf Aku~</p>
+      <button 
+        id="openMaaf"
+        class="mt-7 px-8 py-3 bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:from-pink-500 hover:to-pink-700 text-white font-bold rounded-full shadow-lg transition-all duration-300 ease-in-out text-xl animate-pulse border-2 border-pink-200"
+      >
+        Baca Permintaan Maaf 💌
+      </button>
+    </div>
+  </div>
+
+  <!-- Tombol Musik Melayang -->
+   <button id="music-toggle" aria-label="Toggle Musik">
+      <svg id="icon-music-on" class="wave" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M9 19V6l12-2v13"></path>
+        <circle cx="6" cy="18" r="3"></circle>
+        <circle cx="18" cy="16" r="3"></circle>
+      </svg>
+      <svg id="icon-music-off" class="wave" style="display:none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M9 19V6l12-2v13"></path>
+        <circle cx="6" cy="18" r="3"></circle>
+        <circle cx="18" cy="16" r="3"></circle>
+        <line x1="1" y1="1" x2="23" y2="23" stroke="#fff" stroke-width="2.3"/>
+      </svg>
+      <span id="music-status" class="hidden md:inline text-base font-semibold">Musik On</span>
+    </button>
+
+    <!-- Copyright Floating -->
+    <div class="fixed bottom-3 left-1/2 transform -translate-x-1/2 z-20">
+      <p class="bg-white/60 text-pink-700 px-5 py-2 rounded-full text-sm md:text-base font-semibold shadow-md backdrop-blur-sm">
+        © 2025 Ican | Kekasih pujaan Hatimu 💖
+      </p>
+    </div>
+
+  
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
